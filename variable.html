@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=">
+    <title>Variable properties and Animation in class</title>
+    <style>
+        :root{
+            --box-color:yellow;
+            --danger-color:red;
+            --background-color: aliceblue;
+            --maxw:900px;
+            --maxh:200px;
+            --box-shadow:purple;
+        }
+        .box {
+            max-width: var(--maxw);
+            height: var(--maxh);
+            display: flex;
+            background-color: var(--background-color);
+            align-items: center;
+            justify-content: center;
+        }
+
+        .one {
+            /* --box-color: yellow; */
+            border: 1px solid var(--danger-color);
+            background-color: var(--box-color);
+            width: 100px;
+            height: 100px;
+            margin: 2px 5px;
+            box-shadow: 4px 5px var(--box-shadow);
+            text-align: center;
+            color: black;
+            text-shadow: 1px 2px white;
+            position: relative;
+            animation-name: box1;
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+        }
+        @keyframes box1{
+            0%{
+                bottom: 100px;
+               
+            }
+            25%{
+                bottom:75px;
+               
+            }
+            50%{
+                bottom:50px;
+               
+            }
+            75%{
+                bottom:25px;
+            }
+            100%{
+                bottom: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="one">Hello Everyone</div>
+        <div class="one">Nameste</div>
+        <div class="one">K xa khabar</div>
+        <div class="one">Sanchai tw hola</div>
+    </div>
+</body>
+
+</html>

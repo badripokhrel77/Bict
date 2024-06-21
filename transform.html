@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition and Transform</title>
+    <style>
+        .container{
+            width: 600px;
+            height: 400px;
+            background-color: aliceblue;
+            display: flex;
+             align-items: center; 
+             justify-content: center;
+            border: 2px solid green;
+        }
+        #box{
+            border: 1px solid rgb(15, 15, 14);
+            width: 200px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function: ease-in;
+            transition-delay: 0.5s; */
+            transition: all 2s ease-in-out 0.5s;
+        }
+        #box:hover{
+            background-color: blue;
+            border-radius: 8px;
+            font-size: 24px;
+            width: 200px;
+            height: 200px;
+            /* transform: rotate(45deg); */
+            transform: skew(40deg);
+        }
+    </style>
+</head>
+<body>
+       <div class="container">
+        <div id="box">Hello I am Box!!</div>
+       </div>                                             
+</body>
+</html>

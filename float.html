@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and margin</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .store{
+            padding: 3px;
+            width: 1192px;
+            margin: auto;
+            border: 2px solid rgb(122, 122, 212);
+            background-color: rgb(202, 238, 238);
+        }
+        body{
+            font-family: "Trirong", serif;
+        }
+        .books{
+            border: 3px solid rgb(224, 151, 151);
+            padding:4px 7px;
+            background-color: rgb(182, 182, 240);
+        }
+        #novel{
+            float:left;
+            width: 48%;
+        }
+        #poem{
+            float:right;
+            width: 48%;
+        }
+        #story{
+            clear: both;
+            float: left;
+            width: 100%;
+        }
+        p,h2{
+            text-align:justify;
+        }
+        #song{
+            clear: both;
+        }
+        h1{
+            margin: 18px auto;
+            width: 219px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="store">
+        <h1>Books Stores</h1>
+        <div id="novel" class="books">
+            <h2>novel</h2>
+            <p id="novel" class="section">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, atque iure.
+                Quidem quisquam omnis aliquam ipsum rerum maiores tenetur vitae?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id officia quo error doloribus? Modi atque consequatur nulla harum ullam, sequi eveniet libero necessitatibus nam inventore.</p>
+        </div>
+        <div id="poem" class="books">
+            <h2>Poem</h2>
+            <p id="poem" class="section">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, atque iure.
+                Quidem quisquam omnis aliquam ipsum rerum maiores tenetur vitae? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis tempora debitis dolorum quam expedita corporis vero nulla quae placeat laudantium.</p>
+        </div>
+        <div id="story" class="books">
+            <h2>Story</h2>
+            <p id="story" class="section">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, atque iure.
+                Quidem quisquam omnis aliquam ipsum rerum maiores tenetur vitae?</p>
+        </div>
+        <div id="song" class="books">
+            <h2>song</h2>
+            <p id="song" class="section">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, atque iure.
+                Quidem quisquam omnis aliquam ipsum rerum maiores tenetur vitae?</p>
+        </div>
+</body>
+
+</html>

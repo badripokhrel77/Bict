@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox in css</title>
+    <style>
+.store{
+    width: 73%;
+    height: 280px;
+    border: 2px solid rebeccapurple;
+    display: flex;
+    flex-direction: row;
+     flex-wrap: wrap; 
+     justify-content: flex-start;
+     align-items: stretch;
+}
+.one{
+    background-color: blueviolet;
+    border: 1px solid green;
+    margin: 6px;
+    padding: 6px;
+    width: 11%;
+    height: 60%;
+}
+#one-1{
+    order: 2;
+    flex-grow: 2;
+    flex-basis: 150px;
+}
+#one-2{
+ order: 3;
+ align-self: flex-end;
+}
+#one-3{
+ order: 3;
+ flex-shrink: 2;
+}
+#one-4{
+ order: 2;
+}
+html{
+    font-size: 25px;
+}
+.two{
+    border: 2px solid green;
+    width: 80%;
+    height: 431px;
+    margin: 20px;
+    text-align: center;
+    font-size: 7px;
+}
+#aa-1{
+    font-size: 5em;
+}
+#aa-2{
+    font-size: 3rem;
+    padding: 3rem;
+}
+
+    </style>
+</head>
+
+<body>
+    <h1>This is flexbox</h1>
+    <div class="store">
+        <div class="one" id="one-1">First</div>
+        <div class="one" id="one-2">Second</div>
+        <div class="one" id="one-3">Third</div>
+        <div class="one" id="one-4">Fourth</div>
+    </div>
+    <div class="two">
+        <h1 id="aa-1">One</h1>
+        <h1 id="aa-2">Two</h1>
+        <h1 id="aa-3">Three</h1>
+    </div>
+</body>
+
+</html>

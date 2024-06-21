@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Sign up</h2>
+    <h4>It's free and always will be.</h4>
+    <hr>
+    <form action="backend.php">
+        <label for="fname">First Name:</label>
+        <div>
+            <input type="text" name="my name" id="fname">
+        </div>
+        <label for="lname">Last Name:</label>
+        <div>
+            <input type="text" name="my name" id="lname">
+        </div>
+        <label for="email">Your Email:</label>
+        <div>
+            <input type="email" name="myemail" id="email">
+        </div>
+        <label for="reemail">Re-enter Email:</label>
+        <div>
+            <input type="email" name="myemail" id="reemail">
+        </div>
+        <label for="password">New Password:</label>
+        <div>
+            <input type="password" name="my password" id="password">
+        </div>
+        <br>
+        <label for="gender">Gender:</label>
+        <select name="my gender" id="gender">
+            <option value="male">male</option>
+            <option value="female">female</option>
+            <option value="other">other</option>
+        </select>
+        <div>
+            <br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" name="mydob" id="dob">
+        </div>
+        <label for="age">Age:</label>
+        <div>
+            <input type="number" name="age" id="age">
+        </div>
+        degree: <input type="radio" name="degree">bachelor <input type="radio" name="degree">master
+           <br>
+           <button type="button">Sign up</button>
+           <input type="reset" value="Reset">
+    </form>
+</body>
+
+</html>
